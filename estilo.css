@@ -163,7 +163,7 @@ section{
 }
 
 .sobre .row .content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     color:#fff;
 }
 
@@ -323,19 +323,20 @@ h4 {
   }
   
 
-h2 {
-  font-size: 3rem;
-  color: #fff;
-  margin-bottom: 2rem;
-  text-align: center;
-  line-height: 1.2;
-}
-p{
-    color: #fff;
-    font-size: 30px;
+  .obrigado {
+    padding: 100px;
+    font-size: 36px;
+    color: #f9f9f9;
+    margin-bottom: 10px;
     text-align: center;
-}
-
+    }
+    
+    p {
+      padding: 20px;
+      font-size: 24px;
+      color: #f9f9f9;
+      text-align: center;
+    }
 
 .footer {
     background-color: #000000;
@@ -343,7 +344,18 @@ p{
     text-align: center;
     padding: 20px 0;
   }
-  
+  .footer-info p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  .footer-info a {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+.footer-info a:hover {
+    color: #ccc;
+}
   .redes {
     margin-top: 10px;
   }
@@ -352,7 +364,7 @@ p{
     margin-right: 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 35px;
   }
   
   .credito {
@@ -395,8 +407,10 @@ p{
         position: absolute;
         top:100%; right: -100%;
         background: #fff;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border-top: var(--border);
     }
 
     .header .navbar.active{
@@ -411,13 +425,8 @@ p{
         font-size: 2rem;
     }
 
-    .header .search-form{
-        width: 90%;
-        right: 2rem;
-    }
-
     .home{
-        background-position: left;
+        background-position: center;
         justify-content: center;
         text-align: center;
     }
